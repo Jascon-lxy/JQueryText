@@ -1,0 +1,134 @@
+@charset "utf-8";
+/* CSS Document */
+
+.mine_top{
+	width: 100%;
+    height: 200px;
+    background-color: #2d333f;
+    border-radius: 20px;
+}
+.mine_top_left{
+	border-radius: 10px;
+    height: 100%;
+    width: 300px;
+    float: left;
+    line-height: 280px;
+    text-align: center;
+}
+.mine_top_right{
+	height: 100%;
+	width: 300px;
+	float: left;
+}
+.image{
+	width: 100px;
+	border-radius: 50px;
+}
+.mine_top_right h2{
+	color: aliceblue;
+	font-size: 35px;
+}
+.mine_top_right p{
+	color: aliceblue;
+	font-size: 17px;
+}
+.mine_top_zhenright{
+	height: 100%;
+    width: 300px;
+    float: right;
+    text-align: center;
+    line-height: 200px;
+}
+.qd_button{
+	width: 100px;
+    height: 50px;
+    border: olive;
+    border-radius: 10px;
+}
+.mine_center{
+	width: 100%;
+	height: 500px;
+	margin-top: 20px;
+}
+.mine_center_left{
+	height: 100%;
+    width: 750px;
+    float: left;
+    border-radius: 18px
+	
+}
+.mine_center_right{
+	height: 100%;
+    width: 400px;
+    float: right;
+    background-color: #e5e8c9;
+    margin-right: 20px;
+}
+.center_left_top,.center_rigth_top{
+	width: 100%;
+	height: 10%;
+	line-height: 50px;
+	background-color: #d5d8e0;
+	border-top-left-radius: 18px;
+	border-top-right-radius: 18px;
+}
+.center_left_bottom{
+	width: 100%;
+	height: 90%
+}
+.center_left_bottom table{
+	margin: auto;
+	border: solid #d5d8e0;
+	width: 750px;
+	border-collapse: collapse;
+}
+.center_left_bottom th{padding:10px 30px;}
+.center_left_bottom td{
+	padding:10px 30px;
+	text-align: center;
+	background-color: white;
+	border: solid #d5d8e0;
+	border-collapse: collapse;
+}
+.mine_center_right{
+	border-radius: 18px;
+}
+.ds-post-main {
+	position: relative;
+    width: 420px;
+    left: -20px;
+}
+.ds-avatar {
+	position: absolute;
+    top: 30px;
+    width: 15px;
+    height: 15px;
+    padding: 5px;
+    left: 8px;
+    background: #009688;
+    border-radius: 50%;
+}
+.ds-avatar a {
+	display: block;
+    width: 15px;
+    height: 15px;
+    background: #87eee4;
+    border-radius: 50%;
+}
+.ds-comment-body {
+	margin-left:20px;
+	padding:10px 10px 10px 30px ;
+	height:80px;
+	background-color: #f0f0e3;
+}
+.addbutton{
+	float: right;
+    padding: 13px;
+    border: none;
+    border-radius: 18px;
+    background-color: #d5d8e0;
+}
+#liuyan{
+	left: 130px;
+    position: relative;
+}

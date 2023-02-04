@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/mine.css">
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+</head>
+
+<body>
+	<div class="alldiv">
+			<div class="left_navigation">
+				<div class="menu_logo"><img src="image/logo.jpg" width="290" height="100"></div>
+				<div class="menu_navigation">
+					<ul class="menu_list">
+						<a href="index.html" class="menu_index"></a>
+						<p class="menu_head">&nbsp;&nbsp;&nbsp;&nbsp;读者管理</p>
+						<div class="menu_body">
+							<a href="reader.html">&nbsp;&nbsp;&nbsp;&nbsp;读者类型管理</a>
+							<a href="allreader.html">&nbsp;&nbsp;&nbsp;&nbsp;读者档案管理</a>
+							<a href="mine.html">&nbsp;&nbsp;&nbsp;&nbsp;个人信息</a>
+						</div>
+						<p class="menu_head">&nbsp;&nbsp;&nbsp;&nbsp;图书管理</p>
+						<div class="menu_body">
+							<a href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;图书库存</a>
+							<a href="search.html">&nbsp;&nbsp;&nbsp;&nbsp;图书查询</a>
+						</div>
+						<p class="menu_head">&nbsp;&nbsp;&nbsp;&nbsp;图书借阅</p>
+						<div class="menu_body">
+							<a href="jie.html">&nbsp;&nbsp;&nbsp;&nbsp;图书借出</a>
+							<a href="huan.html">&nbsp;&nbsp;&nbsp;&nbsp;图书归还</a>
+						</div>
+					</ul>
+				</div>
+			</div>
+		<div class="righthtml">
+			<div class="mine_top">
+				<div class="mine_top_left"><img src="image/head.jpg" class="image"></div>
+				<div class="mine_top_right">
+					<h2>晓亦</h2><p>ID:1003</p>
+					<p>余额：￥27.32&nbsp; 积分：6783</p>
+				</div>
+				<div class="mine_top_zhenright"><button class="qd_button">签到</button></div>
+			</div>
+			<div class="mine_center">
+				<div class="mine_center_left">
+					<div class="center_left_top">&nbsp;&nbsp;借书记录</div>
+					<div class="center_left_bottom">
+						<table class="jieshutable">
+      						<tr>
+        						<th>书号</th>
+        						<th>书名</th>
+        						<th>作者</th>
+								<th>借出时间</th>
+								<th>归还时间</th>
+      						</tr>
+							<tr>
+								<td>1</td>
+								<td>《Java教程》</td>
+								<td>张海平</td>
+								<td>2020-1-24</td>
+								<td>2020-2-24</td>
+							</tr>
+							<tr>
+								<td>6</td>
+								<td>《Python3.7快速入门》</td>
+								<td>潘中强</td>
+								<td>2019-1-24</td>
+								<td>2019-2-24</td>
+							</tr>
+    					</table>
+					</div>
+				</div>
+				<div class="mine_center_right">
+					<div class="center_rigth_top">&nbsp;&nbsp;留言板<input type="text" id="liuyan"><button class="addbutton">添加</button></div>
+					<div class="center_rigth_bottom">
+						<div class ="ds-post-main">
+							<div class ="ds-avatar">
+								<a href="#nogo"> </a>
+							</div>
+							<div class ="ds-comment-body"><p>这个网站是真的太棒了</p></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$(".addbutton").click(function(){
+				var html = "";
+				var qianmian ="<div class ='ds-post-main'><div class ='ds-avatar'><a href='#nogo'> </a></div><div class ='ds-comment-body'><p>";
+				html = qianmian+$("#liuyan").val() +"</p></div></div>"
+				$(".center_rigth_bottom").append(html);
+				$("#liuyan").val("");
+				
+			});
+			$(".qd_button").click(function(){
+				alert("今天你已经签到过了，请明天再来！");
+			});
+		});
+	</script>
+</body>
+</html>

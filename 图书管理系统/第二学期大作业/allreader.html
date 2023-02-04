@@ -1,0 +1,63 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>读者档案管理</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<link rel="stylesheet" type="text/css" href="css/search.css">
+<script src="js/jquery-1.12.4.js"></script>
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/allreader.js"></script>
+</head>
+
+<body>
+	<div class="alldiv">
+			<div class="left_navigation">
+				<div class="menu_logo"><img src="image/logo.jpg" width="290" height="100"></div>
+				<div class="menu_navigation">
+					<ul class="menu_list">
+						<a href="index.html" class="menu_index"></a>
+						<p class="menu_head">&nbsp;&nbsp;&nbsp;&nbsp;读者管理</p>
+						<div class="menu_body">
+							<a href="reader.html">&nbsp;&nbsp;&nbsp;&nbsp;读者类型管理</a>
+							<a href="allreader.html">&nbsp;&nbsp;&nbsp;&nbsp;读者档案管理</a>
+							<a href="mine.html">&nbsp;&nbsp;&nbsp;&nbsp;个人信息</a>
+						</div>
+						<p class="menu_head">&nbsp;&nbsp;&nbsp;&nbsp;图书管理</p>
+						<div class="menu_body">
+							<a href="index.html">&nbsp;&nbsp;&nbsp;&nbsp;图书库存</a>
+							<a href="search.html">&nbsp;&nbsp;&nbsp;&nbsp;图书查询</a>
+						</div>
+						<p class="menu_head">&nbsp;&nbsp;&nbsp;&nbsp;图书借阅</p>
+						<div class="menu_body">
+							<a href="jie.html">&nbsp;&nbsp;&nbsp;&nbsp;图书借出</a>
+							<a href="huan.html">&nbsp;&nbsp;&nbsp;&nbsp;图书归还</a>
+						</div>
+					</ul>
+				</div>
+			</div>
+		<div class="righthtml">
+			<div class="search bar1">
+				<div class="form">
+					<input type="text" placeholder="请输入读者号、姓名或者电话号码查询" id="uinput">
+					<button id="button"></button>
+				</div>
+			</div>
+			<div>
+				<table class="booklist">
+      				<tr>
+						<th>读者号</th>
+						<th>类型</th>
+						<th>姓名</th>
+						<th>电话</th>
+        				<th>账户名</th>
+        				<th>密码</th>
+						<th>状态</th>
+      				</tr>
+    			</table>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

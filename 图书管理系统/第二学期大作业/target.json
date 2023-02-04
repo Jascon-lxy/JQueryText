@@ -1,0 +1,20 @@
+[
+    {
+        "username":"admin",
+		"password":"123456",
+		"key":"1",
+		"id":"10001",
+		"type":"管理员",
+		"name":"老李",
+		"number":"13626803300"
+    },{
+        "username":"user1",
+		"password":"123456",
+		"key":"1",
+		"id":"10002",
+		"type":"普通用户",
+		"name":"小明",
+		"number":"17833066625"
+		
+    }
+]
